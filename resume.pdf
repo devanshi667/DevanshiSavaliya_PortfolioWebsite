@@ -1,0 +1,144 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 1200
+>>
+stream
+BT
+/F2 18 Tf
+50 750 Td
+(DEVANSHI SAVALIYA) Tj
+/F1 12 Tf
+0 -25 Td
+(Full Stack Developer | Web Development Enthusiast) Tj
+0 -15 Td
+(Email: devanshi.savaliya@gmail.com | Phone: +91 98765 43210) Tj
+0 -15 Td
+(LinkedIn: linkedin.com/in/devanshisavaliya | GitHub: github.com/devanshisavaliya) Tj
+0 -30 Td
+/F2 14 Tf
+(EDUCATION) Tj
+/F1 11 Tf
+0 -20 Td
+(Bachelor of Technology in Information Technology) Tj
+0 -15 Td
+(Gujarat Technological University | 2021-2025 | CGPA: 8.5/10) Tj
+0 -25 Td
+/F2 14 Tf
+(TECHNICAL SKILLS) Tj
+/F1 11 Tf
+0 -20 Td
+(Programming Languages: HTML5, CSS3, JavaScript, Python, Java) Tj
+0 -15 Td
+(Frameworks & Libraries: React.js, Node.js, Express.js, Bootstrap) Tj
+0 -15 Td
+(Databases: MySQL, MongoDB) Tj
+0 -15 Td
+(Tools & Technologies: Git, GitHub, VS Code, Figma, Postman) Tj
+0 -15 Td
+(Version Control: Git, GitHub Pages) Tj
+0 -25 Td
+/F2 14 Tf
+(PROJECTS) Tj
+/F1 11 Tf
+0 -20 Td
+(1. E-commerce Website - Full-stack web application with shopping cart) Tj
+0 -15 Td
+(   Technologies: HTML, CSS, JavaScript, Local Storage) Tj
+0 -15 Td
+(2. Task Management App - React-based productivity application) Tj
+0 -15 Td
+(   Technologies: React.js, CSS3, Local Storage, Drag & Drop API) Tj
+0 -15 Td
+(3. Weather Dashboard - Real-time weather application) Tj
+0 -15 Td
+(   Technologies: JavaScript, OpenWeather API, Chart.js) Tj
+0 -15 Td
+(4. Personal Portfolio - Responsive portfolio website) Tj
+0 -15 Td
+(   Technologies: HTML5, CSS3, JavaScript, GitHub Pages) Tj
+0 -25 Td
+/F2 14 Tf
+(CERTIFICATIONS) Tj
+/F1 11 Tf
+0 -20 Td
+(- Web Development Fundamentals - FreeCodeCamp) Tj
+0 -15 Td
+(- JavaScript Algorithms and Data Structures - FreeCodeCamp) Tj
+0 -15 Td
+(- Responsive Web Design - FreeCodeCamp) Tj
+0 -25 Td
+/F2 14 Tf
+(SOFT SKILLS) Tj
+/F1 11 Tf
+0 -20 Td
+(Problem Solving, Team Collaboration, Communication, Time Management) Tj
+0 -15 Td
+(Adaptability, Critical Thinking, Leadership, Creative Thinking) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000284 00000 n 
+0000001536 00000 n 
+0000001593 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+1655
+%%EOF
