@@ -227,6 +227,13 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Skills and Contact Section Background */
+.skills,
+.contact {
+    background: var(--card-bg);
+    min-height: 100vh;
+}
+
 .skill-category:hover,
 .project-card:hover {
     transform: translateY(-8px);
