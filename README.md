@@ -4,7 +4,7 @@ A responsive personal portfolio website showcasing skills, projects, and contact
 
 ## Features
 
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Responsive Design**:  Works on desktop, tablet, and mobile devices
 - **Modern UI**: Clean and professional design with smooth animations
 - **Interactive Elements**: Hover effects, skill bar animations, and smooth scrolling
 - **Contact Form**: Functional contact form with validation
