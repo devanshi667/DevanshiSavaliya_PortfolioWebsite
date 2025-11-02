@@ -4,6 +4,8 @@ A responsive personal portfolio website showcasing skills, projects, and contact
 
 ## Features
 
+
+
 - **Responsive Design**:  Works on desktop, tablet, and mobile devices
 - **Modern UI**: Clean and professional design with smooth animations
 - **Interactive Elements**: Hover effects, skill bar animations, and smooth scrolling
@@ -81,3 +83,4 @@ DevanshiSavaliya_PortfolioWebsite/
 ## License
 
 This project is open source and available under the MIT License.
+
