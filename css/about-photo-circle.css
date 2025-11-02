@@ -1,0 +1,25 @@
+/* About Page Photo Circle Style */
+.about-section .profile-photo img {
+    border-radius: 50% !important;
+    border: 4px solid var(--secondary-accent) !important;
+    box-shadow: 0 0 30px rgba(183, 148, 244, 0.4) !important;
+    transition: all 0.3s ease !important;
+    animation: neonWave 5s ease-in-out infinite !important;
+}
+
+@keyframes neonWave {
+    0%, 100% { 
+        box-shadow: 0 0 30px rgba(183, 148, 244, 0.4);
+        border-color: var(--secondary-accent);
+    }
+    50% { 
+        box-shadow: 0 0 40px rgba(129, 230, 217, 0.6);
+        border-color: var(--primary-accent);
+    }
+}
+
+.about-section .profile-photo:hover img {
+    transform: rotate(1deg) scale(1.05) !important;
+    border-color: var(--primary-accent) !important;
+    box-shadow: 0 0 50px rgba(129, 230, 217, 0.7) !important;
+}
