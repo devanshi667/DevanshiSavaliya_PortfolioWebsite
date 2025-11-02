@@ -1,0 +1,9 @@
+/* Development tools hover effects */
+.tool-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
+}
+
+.tool-item:active {
+    transform: translateY(-2px) !important;
+}
