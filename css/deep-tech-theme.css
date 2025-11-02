@@ -67,15 +67,7 @@ body {
 }
 
 .home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(129, 230, 217, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(183, 148, 244, 0.1) 0%, transparent 50%);
-    pointer-events: none;
+    display: none;
 }
 
 /* Main Heading */
@@ -140,28 +132,15 @@ body {
 }
 
 .profile-photo img {
-    border-radius: 12px;
+    border-radius: 0;
     border: none;
-    box-shadow: 0 0 30px rgba(183, 148, 244, 0.4);
-    transition: all 0.3s ease;
-    animation: neonWave 5s ease-in-out infinite;
-}
-
-@keyframes neonWave {
-    0%, 100% { 
-        box-shadow: 0 0 30px rgba(183, 148, 244, 0.4);
-        border-color: var(--secondary-accent);
-    }
-    50% { 
-        box-shadow: 0 0 40px rgba(129, 230, 217, 0.6);
-        border-color: var(--primary-accent);
-    }
+    box-shadow: none;
+    transition: none;
+    animation: none;
 }
 
 .profile-photo:hover img {
-    transform: rotate(1deg) scale(1.05);
-    border-color: var(--primary-accent);
-    box-shadow: 0 0 50px rgba(129, 230, 217, 0.7);
+    transform: none;
 }
 
 /* Buttons */
