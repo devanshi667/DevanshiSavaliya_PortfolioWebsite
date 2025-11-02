@@ -227,11 +227,13 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Skills and Contact Section Background */
+/* Projects, Skills and Contact Section Background */
+.projects,
 .skills,
 .contact {
-    background: var(--card-bg);
+    background: var(--primary-bg);
     min-height: 100vh;
+    padding: 100px 0 50px 0;
 }
 
 .skill-category:hover,
