@@ -1,0 +1,388 @@
+/* Complete Violet-Pink Theme - Ready to Use CSS */
+
+/* Violet-Pink Color Variables */
+:root {
+    /* Main Gradient */
+    --main-gradient: linear-gradient(90deg, #7C3AED, #FF6B9C);
+    --main-gradient-hover: linear-gradient(90deg, #FF6B9C, #7C3AED);
+    
+    /* Solid Colors */
+    --violet-primary: #7C3AED;
+    --pink-accent: #FF6B9C;
+    
+    /* Text Colors */
+    --text-dark: #1E1E1E;
+    --text-medium: #5A5A5A;
+    --text-body: #4A4A4A;
+    --text-light: #777777;
+    --text-white: #FFFFFF;
+    
+    /* Background Colors */
+    --bg-main: #F8F7FC;
+    --bg-hero: linear-gradient(135deg, #F8F7FC 0%, #F0E7FF 100%);
+    --bg-card: #FFFFFF;
+    
+    /* Effects */
+    --shadow-violet: rgba(124, 58, 237, 0.15);
+    --shadow-soft: 0 8px 25px rgba(124, 58, 237, 0.15);
+    --shadow-hover: 0 12px 35px rgba(124, 58, 237, 0.25);
+    --glow-violet: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+/* Global Styles */
+body {
+    background: var(--bg-main);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation Gradient Logo */
+.nav-logo {
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+/* Hero Section Background */
+.home {
+    background: var(--bg-hero);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Main Heading - "Hi, I'm" */
+.home h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Name Gradient Effect - "Devanshi Savaliya" */
+.home h1 span {
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    animation: gradient-pulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 2px 4px rgba(124, 58, 237, 0.2));
+}
+
+@keyframes gradient-pulse {
+    0%, 100% { 
+        background: linear-gradient(90deg, #7C3AED, #FF6B9C);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    50% { 
+        background: linear-gradient(90deg, #FF6B9C, #A855F7, #7C3AED);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+/* Tagline Styling */
+.tagline {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-medium);
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+/* Body/About Text */
+.bio {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-body);
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+/* Highlight Words in Text */
+.highlight {
+    color: var(--violet-primary);
+    font-weight: 600;
+}
+
+/* Primary Buttons */
+.btn {
+    background: var(--violet-primary);
+    color: var(--text-white);
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background: var(--pink-accent);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Button Shine Effect */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+/* Section Headings */
+.skills h2,
+.projects h2,
+.contact h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+/* Section Descriptions */
+.skills > .container > p,
+.projects > .container > p,
+.contact > .container > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-medium);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+/* Card Backgrounds */
+.skill-category,
+.project-card,
+.contact-form {
+    background: var(--bg-card);
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.skill-category:hover,
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Skill Category Headings */
+.skill-category h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--violet-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Skill Items */
+.skill-item {
+    background: rgba(124, 58, 237, 0.05);
+    border: 1px solid rgba(124, 58, 237, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background: rgba(124, 58, 237, 0.1);
+    transform: translateX(10px);
+    border-color: var(--violet-primary);
+}
+
+.skill-item i {
+    color: var(--violet-primary);
+    font-size: 1.8rem;
+}
+
+.skill-item span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Progress Bars */
+.skill-progress {
+    background: var(--main-gradient);
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Project Titles */
+.project-content h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--violet-primary);
+    margin-bottom: 1rem;
+}
+
+/* Project Descriptions */
+.project-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Project Links */
+.project-links a {
+    background: var(--main-gradient);
+    color: var(--text-white);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+}
+
+.project-links a:hover {
+    background: var(--main-gradient-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+}
+
+/* Contact Form */
+.form-group input,
+.form-group textarea {
+    background: rgba(124, 58, 237, 0.05);
+    border: 2px solid rgba(124, 58, 237, 0.1);
+    border-radius: 12px;
+    padding: 18px 25px;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--violet-primary);
+    background: var(--bg-card);
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+/* Contact Links */
+.contact-links a {
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--violet-primary);
+}
+
+/* Footer */
+.footer {
+    background: var(--violet-primary);
+    color: var(--text-white);
+    padding: 40px 0;
+}
+
+.footer p {
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+}
+
+.social-links a {
+    color: var(--text-white);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--pink-accent);
+    transform: translateY(-2px);
+}
+
+/* Small Labels */
+.tool-item p,
+.soft-skill,
+.footer p {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.8rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .skills h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+}
