@@ -1,0 +1,318 @@
+/* Premium Professional Typography System */
+
+/* Import Premium Fonts - Sora + Inter Combination */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Typography Variables */
+:root {
+    /* Font Families */
+    --heading-font: 'Sora', sans-serif;
+    --body-font: 'Inter', sans-serif;
+    
+    /* Font Sizes */
+    --name-size: 4rem;          /* 64px - Main Name */
+    --tagline-size: 1.375rem;   /* 22px - Tagline */
+    --section-heading: 2.25rem; /* 36px - Section Titles */
+    --subheading: 1.5rem;       /* 24px - Project Titles */
+    --body-text: 1.125rem;      /* 18px - Paragraphs */
+    --button-text: 1rem;        /* 16px - Buttons */
+    --small-text: 0.875rem;     /* 14px - Labels */
+    
+    /* Font Weights */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
+    
+    /* Colors */
+    --text-primary: #1E1E1E;
+    --text-secondary: #555555;
+    --text-light: #777777;
+    --gradient-text: linear-gradient(90deg, #6C63FF, #FF6584);
+    
+    /* Spacing */
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0;
+    --letter-spacing-wide: 0.025em;
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.6;
+}
+
+/* Global Typography Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-normal);
+    color: var(--text-primary);
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: var(--weight-semibold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: 1rem;
+}
+
+/* Main Name/Title - Hero Section */
+.home h1 {
+    font-family: var(--heading-font);
+    font-size: var(--name-size);
+    font-weight: var(--weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    color: white;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+/* Gradient Name Effect */
+.home h1 span {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease-in-out infinite;
+    font-weight: var(--weight-extrabold);
+}
+
+@keyframes gradient-shift {
+    0%, 100% { 
+        background: linear-gradient(90deg, #6C63FF, #FF6584);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    50% { 
+        background: linear-gradient(90deg, #FF6584, #FFD93D, #6C63FF);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+/* Tagline - Below Name */
+.tagline {
+    font-family: var(--heading-font);
+    font-size: var(--tagline-size);
+    font-weight: var(--weight-medium);
+    font-style: italic;
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-wide);
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bio/About Text */
+.bio {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-relaxed);
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 650px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Headings */
+.skills h2,
+.projects h2,
+.contact h2 {
+    font-family: var(--heading-font);
+    font-size: var(--section-heading);
+    font-weight: var(--weight-bold);
+    text-align: center;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Section Descriptions */
+.skills > .container > p,
+.projects > .container > p,
+.contact > .container > p {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-medium);
+    font-style: italic;
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Skill Category Headings */
+.skill-category h3 {
+    font-family: var(--heading-font);
+    font-size: var(--subheading);
+    font-weight: var(--weight-semibold);
+    color: #6C63FF;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Skill Item Text */
+.skill-item span {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-semibold);
+    color: var(--text-primary);
+    min-width: 120px;
+}
+
+/* Project Titles */
+.project-content h3 {
+    font-family: var(--heading-font);
+    font-size: var(--subheading);
+    font-weight: var(--weight-semibold);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Project Descriptions */
+.project-content p {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Button Text */
+.btn,
+.project-links a {
+    font-family: var(--heading-font);
+    font-size: var(--button-text);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: none;
+}
+
+/* Navigation Links */
+.nav-link {
+    font-family: var(--body-font);
+    font-size: var(--button-text);
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Logo */
+.nav-logo {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Contact Info */
+.contact-info h3 {
+    font-family: var(--heading-font);
+    font-size: var(--subheading);
+    font-weight: var(--weight-semibold);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Contact Links */
+.contact-links a {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-medium);
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #6C63FF;
+}
+
+/* Form Elements */
+.form-group input,
+.form-group textarea {
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    font-weight: var(--weight-regular);
+    color: var(--text-primary);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-light);
+    font-weight: var(--weight-regular);
+}
+
+/* Footer Text */
+.footer p {
+    font-family: var(--body-font);
+    font-size: var(--small-text);
+    font-weight: var(--weight-regular);
+    color: var(--text-secondary);
+}
+
+/* Soft Skills Tags */
+.soft-skill {
+    font-family: var(--body-font);
+    font-size: var(--small-text);
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Development Tools Text */
+.tool-item p {
+    font-family: var(--body-font);
+    font-size: var(--small-text);
+    font-weight: var(--weight-medium);
+    color: var(--text-primary);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    :root {
+        --name-size: 2.5rem;        /* 40px */
+        --tagline-size: 1.25rem;    /* 20px */
+        --section-heading: 2rem;    /* 32px */
+        --subheading: 1.25rem;      /* 20px */
+        --body-text: 1rem;          /* 16px */
+    }
+    
+    .bio {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --name-size: 2rem;          /* 32px */
+        --tagline-size: 1.125rem;   /* 18px */
+        --section-heading: 1.75rem; /* 28px */
+        --subheading: 1.125rem;     /* 18px */
+    }
+}
