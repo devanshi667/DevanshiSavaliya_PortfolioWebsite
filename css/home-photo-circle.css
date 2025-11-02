@@ -1,39 +1,17 @@
-/* Home Page Photo Circle Style */
+/* Home Page Photo - No Animation */
 .home .profile-photo img {
     border-radius: 50% !important;
     border: 4px solid #FF6B9C !important;
-    box-shadow: 0 0 30px rgba(255, 107, 156, 0.4) !important;
-    transition: all 0.3s ease !important;
-    animation: pinkGlow 5s ease-in-out infinite !important;
     width: 300px !important;
     height: 300px !important;
     object-fit: cover !important;
-}
-
-@keyframes pinkGlow {
-    0%, 100% { 
-        box-shadow: 0 0 30px rgba(255, 107, 156, 0.4);
-        border-color: #FF6B9C;
-    }
-    50% { 
-        box-shadow: 0 0 40px rgba(255, 107, 156, 0.6);
-        border-color: #FF8FA3;
-    }
+    box-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
 }
 
 .home .profile-photo:hover img {
-    transform: rotate(1deg) scale(1.05) !important;
-    border-color: #FF8FA3 !important;
-    box-shadow: 0 0 50px rgba(255, 107, 156, 0.7) !important;
-}
-
-@keyframes pinkPulse {
-    0%, 100% { 
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.3;
-    }
-    50% { 
-        transform: translate(-50%, -50%) scale(1.1);
-        opacity: 0.5;
-    }
+    transform: none !important;
+    border-color: #FF6B9C !important;
+    box-shadow: none !important;
 }
